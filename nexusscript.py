@@ -76,6 +76,7 @@ def check_slots():
             log_message = f"No slots found ({time.ctime()})"
             logger.info(log_message)
             current_status = log_message
+            current_timestamp = ""
 
     except requests.RequestException as e:
         log_message = f"An error occurred: {e}"
